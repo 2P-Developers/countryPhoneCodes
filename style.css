@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+.country-list {
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 -1px;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+  background-color: white;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.flag-img {
+  max-width: 20px;
+  margin-right: 10px;
+  height: 15px;
+  box-shadow: 0px 0px 1px 0px #888;
+  vertical-align: middle;
+  display: inline-block;
+}
+.country-list li:hover {
+  background-color: #ccc;
+}
+.country-list li {
+  padding: 5px 10px;
+  outline: none;
+}
+.arrow {
+  display: inline-block;
+  border-top: none;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+.selected-flag {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 6px 0 8px;
+}
+.selected-flag-container {
+  display: flex;
+  align-items: center;
+}
+.selected-flag-container:hover {
+  background-color: #ccc;
+}
+.phone {
+  position: relative;
+  display: inline-block;
+}
+.flag-container {
+  right: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1px;
+  height: 100%;
+  width: 40%;
+}
